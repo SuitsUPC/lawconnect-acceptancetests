@@ -1,0 +1,12 @@
+Feature: Solicitud de Cita con Abogado por número celular
+  Como cliente, quiero solicitar una cita con un abogado a través del número proporcionado en su perfil para discutir mi caso legal, para recibir asesoría legal en tiempo real.
+
+  Scenario 1: Solicitud de Cita
+    GIVEN un cliente interesado en un abogado específico
+    WHEN encuentra el número de contacto del abogado
+    THEN puede enviar un mensaje o llamada y comunicarse directamente.
+
+  Scenario 2: Cita no confirmada
+    GIVEN un cliente interesado en un abogado específico
+    WHEN no encuentra un número de contacto con el abogado
+    THEN opta por la opción de solicitud de cita programada.

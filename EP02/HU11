@@ -1,0 +1,14 @@
+Feature: Visualización de Consultas Pendientes
+  Como abogado, quiero ver una lista de todas las consultas pendientes para gestionar mejor mi tiempo y priorizar mis tareas, para evitar retrasos en la atención de mis clientes.
+
+  Scenario 1: Visualización de Consultas Pendientes
+    GIVEN un abogado con consultas pendientes
+    WHEN accede a su panel de usuario
+    THEN se muestra una lista detallada de todas las consultas pendientes, incluyendo fechas, detalles relevantes y el estado de cada consulta
+    AND puede marcar consultas como "resueltas" o "en progreso".
+
+  Scenario 2: No hay consultas pendientes
+    GIVEN un abogado sin consultas pendientes
+    WHEN accede al panel de usuario
+    THEN se muestra un mensaje indicando que no hay consultas pendientes
+    AND se le sugiere revisar el historial de consultas.

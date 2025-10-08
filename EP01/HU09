@@ -1,0 +1,15 @@
+Feature: Consulta de Perfil de Abogado
+  Como cliente, quiero poder ver el perfil completo de un abogado, incluyendo sus casos de éxito y calificaciones,
+  para evaluar si es el adecuado para mi caso y tomar una decisión informada.
+
+  Scenario 1: Consulta de Perfil de Abogado
+    GIVEN un cliente buscando abogado
+    WHEN selecciona un abogado en los resultados de búsqueda
+    THEN se muestra su perfil completo con información detallada y casos de éxito
+    AND el cliente puede ver las calificaciones de otros usuarios sobre ese abogado.
+
+  Scenario 2: Perfil de abogado no disponible
+    GIVEN un cliente intentando acceder a un perfil
+    WHEN el abogado ha desactivado su perfil temporalmente
+    THEN se muestra un mensaje indicando que el perfil no está disponible
+    AND el cliente puede buscar otros abogados disponibles.

@@ -1,0 +1,14 @@
+Feature: Visualización de Progreso de Caso
+  Como cliente, quiero ver el progreso actual de mi caso en tiempo real para estar al tanto de los avances y próximos pasos.
+
+  Scenario 1: Visualización de Progreso de Caso
+    GIVEN un cliente con un caso activo
+    WHEN accede a la sección de su caso
+    THEN se muestra el progreso actual, incluyendo hitos alcanzados y próximos pasos con fechas estimadas de conclusión
+    AND recibe notificaciones de los cambios más importantes.
+
+  Scenario 2: No hay actualizaciones recientes
+    GIVEN un cliente que ha revisado recientemente su caso
+    WHEN accede a la sección de su caso
+    THEN se muestra un mensaje indicando que no hay actualizaciones recientes
+    AND se le informa de los últimos cambios registrados.

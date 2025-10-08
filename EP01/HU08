@@ -1,0 +1,15 @@
+Feature: Búsqueda de Abogado
+  Como cliente, quiero buscar abogados según su especialización, experiencia y ubicación
+  para elegir al más adecuado para mi caso y agilizar el proceso de contratación de servicios legales.
+
+  Scenario: Búsqueda exitosa de abogado
+    Given un cliente registrado
+    When ingresa criterios de búsqueda (especialización, experiencia, ubicación)
+    Then se muestran abogados que coinciden con esos criterios
+    And puede filtrar los resultados por calificación y costo
+
+  Scenario: No se encuentran abogados según los criterios
+    Given un cliente que busca abogados
+    When los criterios de búsqueda no coinciden con ningún abogado
+    Then se muestra un mensaje indicando que no hay coincidencias
+    And el sistema sugiere ampliar o ajustar los criterios de búsqueda

@@ -1,0 +1,16 @@
+Feature: Testimonios de Clientes Satisfechos
+  Como cliente
+  Quiero leer testimonios de otros clientes satisfechos en la landing page
+  Para sentirme más confiado al contratar los servicios.
+
+  Scenario 1: Visualización de Testimonios
+    Given un cliente potencial interesado en los servicios
+    When navega por la landing page
+    Then se muestra una sección con testimonios auténticos de clientes satisfechos, ordenados por relevancia
+    And puede filtrar los testimonios por el tipo de servicio o abogado contratado
+
+  Scenario 2: No hay testimonios disponibles
+    Given un cliente potencial buscando opiniones en la landing page
+    When no hay testimonios disponibles
+    Then se muestra un mensaje indicando que pronto se publicarán nuevos testimonios
+    And se invita al cliente a contactar con la aplicación para más información

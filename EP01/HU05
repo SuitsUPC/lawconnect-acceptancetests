@@ -1,0 +1,16 @@
+Feature: Configuración de Disponibilidad
+  Como abogado
+  Quiero configurar mi disponibilidad en la aplicación
+  Para que los clientes puedan reservar citas conmigo en los horarios correctos.
+
+  Scenario 1: Configuración de Disponibilidad
+    Given un abogado con un perfil completo
+    When configura su disponibilidad en la sección de horarios
+    Then los clientes pueden ver y agendar citas en los horarios disponibles
+    And el abogado recibe notificaciones de las citas programadas
+
+  Scenario 2: Error al configurar disponibilidad por conflicto de horarios
+    Given un abogado que intenta configurar su disponibilidad
+    When selecciona un horario que entra en conflicto con otra cita
+    Then el sistema muestra un mensaje de advertencia indicando el conflicto
+    And no permite guardar hasta resolver el conflicto

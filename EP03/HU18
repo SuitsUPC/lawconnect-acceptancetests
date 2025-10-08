@@ -1,0 +1,16 @@
+Feature: Acceso Rápido a Funcionalidades Principales
+  Como cliente
+  Quiero tener accesos rápidos a las funcionalidades principales desde la landing page
+  Para encontrar fácilmente lo que necesito, sin tener que hacer clics innecesarios.
+
+  Scenario 1: Acceso Rápido desde la Landing Page
+    Given un cliente potencial explorando el sitio web
+    When llega a la landing page
+    Then se muestran accesos directos claros a las funcionalidades clave como registro, búsqueda de abogados y contacto, con un diseño intuitivo y responsivo
+    And puede realizar una acción en 3 clics o menos
+
+  Scenario 2: No hay accesos rápidos disponibles
+    Given un cliente potencial buscando funcionalidades clave
+    When no se muestran accesos rápidos en la landing page
+    Then el cliente puede navegar a través del menú principal para acceder a las funcionalidades deseadas
+    And se le informa de los accesos disponibles en otras secciones

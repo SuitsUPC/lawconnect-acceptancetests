@@ -1,0 +1,13 @@
+Feature: Solicitud de Cita con Abogado
+  Como cliente, quiero solicitar una cita con un abogado a través de la aplicación para discutir mi caso legal de manera conveniente, para recibir asesoría legal en el menor tiempo posible.
+
+  Scenario 1: Solicitud de Cita
+    GIVEN un cliente interesado en un abogado específico
+    WHEN elige una fecha y hora disponible
+    THEN puede enviar una solicitud de cita al abogado, y ambas partes reciben una confirmación por correo y en la plataforma.
+
+  Scenario 2: Cita no confirmada
+    GIVEN un cliente interesado en un abogado específico
+    WHEN selecciona una fecha que ya no está disponible
+    THEN recibe una notificación de que la cita no pudo ser confirmada
+    AND se le ofrece la opción de seleccionar una nueva fecha.

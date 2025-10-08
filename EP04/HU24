@@ -1,0 +1,13 @@
+Feature: Revisión del Progreso del Caso
+  Como cliente, quiero poder revisar el progreso de mi caso a través de la aplicación para estar al tanto de los avances realizados por el abogado, para tener control y visibilidad del estado de mi caso en cualquier momento.
+
+  Scenario 1: Revisión del Progreso
+    GIVEN un cliente con un caso en proceso
+    WHEN inicia sesión en la aplicación
+    THEN puede ver una actualización del progreso de su caso en su perfil, con hitos y fechas esperadas para los próximos pasos.
+
+  Scenario 2: No hay progreso reciente
+    GIVEN un cliente con un caso en proceso
+    WHEN revisa su caso y no se han registrado avances recientes
+    THEN se le muestra la última actualización disponible
+    AND se le sugiere contactar a su abogado si tiene dudas.

@@ -1,0 +1,16 @@
+Feature: Gestión de Roles y Permisos
+  Como administrador
+  Quiero gestionar los roles y permisos de los usuarios en la aplicación
+  Para garantizar que cada usuario tenga acceso solo a la información y funcionalidades necesarias,
+  Y así mantener la seguridad y el control de los datos.
+
+  Scenario 1: Gestión de Roles y Permisos
+    Given un administrador con acceso al panel de administración
+    When accede a la sección de roles y permisos
+    Then puede crear, modificar o eliminar roles y asignar permisos específicos a cada uno
+    And puede ver un registro de cambios en los permisos asignados
+
+  Scenario 2: Asignación incorrecta de permisos
+    Given un administrador con acceso al panel de administración
+    When asigna un rol incorrecto a un usuario
+    Then puede revertir los cambios o corregir la asignación de permisos desde el registro

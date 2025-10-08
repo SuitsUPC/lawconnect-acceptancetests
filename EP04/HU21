@@ -1,0 +1,14 @@
+Feature: Consulta de Disponibilidad de Abogados
+  Como cliente, quiero poder consultar la disponibilidad de los abogados en tiempo real para reservar una cita en el momento que mejor me convenga y pueda organizar mis consultas de manera eficiente.
+
+  Scenario 1: Consulta de Disponibilidad
+    GIVEN un cliente buscando asesoría legal
+    WHEN navega por la lista de abogados en la aplicación
+    THEN puede ver las fechas y horarios disponibles de cada abogado, con opciones para filtrar por disponibilidad
+    AND puede seleccionar una fecha para reservar directamente desde el calendario.
+
+  Scenario 2: No hay disponibilidad inmediata
+    GIVEN un cliente buscando una cita con un abogado
+    WHEN selecciona un abogado con disponibilidad limitada
+    THEN se le muestra un mensaje indicando la falta de horarios cercanos
+    AND se le sugieren alternativas o la opción de recibir una notificación cuando haya disponibilidad.

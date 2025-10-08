@@ -1,0 +1,16 @@
+Feature: Diseño Atractivo y Responsivo
+  Como cliente
+  Quiero que la landing page tenga un diseño atractivo y sea responsivo
+  Para una experiencia de usuario agradable desde cualquier dispositivo.
+
+  Scenario 1: Diseño de la Landing Page
+    Given un cliente potencial utilizando diferentes dispositivos
+    When visita la landing page
+    Then la página se adapta perfectamente al dispositivo, con un diseño atractivo que facilita la navegación
+    And las principales funcionalidades son accesibles sin problemas desde móviles y tablets
+
+  Scenario 2: Problemas de responsividad
+    Given un cliente utilizando un dispositivo móvil
+    When la página no se adapta correctamente a su pantalla
+    Then el cliente puede informar del problema a través de un formulario de retroalimentación
+    And se le ofrece una versión simplificada de la página para continuar su navegación

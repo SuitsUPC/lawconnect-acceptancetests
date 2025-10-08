@@ -1,0 +1,16 @@
+Feature: Registro de Cliente
+  Como visitante
+  Quiero poder registrarme en la aplicación como cliente
+  Para poder contactar abogados y gestionar mis casos legales de manera eficiente.
+
+  Scenario 1: Registro de Cliente
+    Given un cliente nuevo
+    When completa el formulario de registro
+    Then su perfil es creado y puede acceder a la plataforma para buscar abogados
+    And recibe recomendaciones automáticas de abogados basadas en su perfil y necesidades
+
+  Scenario 2: Error en el registro por dirección de correo duplicada
+    Given un cliente intentando registrarse
+    When utiliza un correo electrónico que ya está registrado
+    Then el sistema muestra un mensaje de error
+    And no permite el registro hasta que use una dirección de correo válida

@@ -1,0 +1,14 @@
+Feature: Visualización de Historial de Consultas
+  Como cliente, quiero ver el historial de todas las consultas anteriores para tener un registro de mis interacciones legales y casos tratados.
+
+  Scenario 1: Visualización de Historial de Consultas
+    GIVEN un cliente registrado con consultas previas
+    WHEN accede a su perfil
+    THEN se muestra un historial completo de todas las consultas anteriores con detalles de cada una
+    AND puede descargar o compartir los detalles de sus consultas.
+
+  Scenario 2: No hay historial de consultas
+    GIVEN un cliente registrado sin consultas anteriores
+    WHEN accede a su perfil
+    THEN se muestra un mensaje indicando que no hay consultas en el historial
+    AND se le sugiere iniciar una nueva consulta.

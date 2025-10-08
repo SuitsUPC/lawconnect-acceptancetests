@@ -1,0 +1,19 @@
+Feature: Gestión de Casos Activos
+  Como abogado
+  Quiero gestionar mis casos activos en la aplicación
+  Para mantener un registro organizado y actualizado de mi trabajo.
+
+  Scenario 1: Gestión de Casos Activos
+    Given un abogado con casos activos
+    When accede al apartado de casos
+    Then puede ver todos sus casos activos
+    And puede actualizar la información de los casos
+    And puede organizar sus casos por prioridad o fecha de vencimiento
+    And puede generar reportes mensuales de su progreso
+
+  Scenario 2: Error al actualizar un caso
+    Given un abogado que intenta actualizar la información de un caso
+    When hay un error de conexión
+    Then el sistema muestra un mensaje de error
+    And guarda los cambios en un estado temporal
+    And reintenta automáticamente la actualización más tarde

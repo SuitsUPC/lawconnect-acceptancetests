@@ -1,0 +1,16 @@
+Feature: Información Clara y Concisa sobre el Servicio
+  Como cliente,
+  Quiero encontrar una descripción clara y concisa de los servicios ofrecidos en la landing page
+  Para entender de qué se trata la aplicación sin complicaciones.
+
+  Scenario 1: Información sobre el Servicio
+    Given un cliente potencial sin experiencia previa con la plataforma
+    When accede a la landing page
+    Then se presenta una descripción clara y simple de los servicios y beneficios de la plataforma
+    And puede acceder a más información sin tener que navegar por varias páginas
+
+  Scenario 2: No se muestra la información clara
+    Given un cliente potencial buscando más información
+    When la descripción no es clara o está incompleta
+    Then el cliente puede contactar a la aplicación para obtener más detalles
+    And se le ofrece una guía o página de preguntas frecuentes
